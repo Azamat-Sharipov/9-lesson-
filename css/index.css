@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    align-items: center;
+}
+
+header{
+    height: 100vh;
+    background: #1391CEB2;
+}
+
+
+nav{
+    background: #1391CEB2;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.link a{
+    color: #25468A;
+    font-size: 20px;
+    
+}
+
+.link a:hover{
+    color: white;
+}
+
+.btns{
+    padding: 15px 48px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    font-weight: 700;
+}
+
+nav button:hover{
+    color: white;
+    background: #25468A;
+    box-shadow: 1px 1px 10px black;
+    cursor: pointer;
+}
+
+.hero{
+    padding-top: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title{
+    padding: 2px;
+    font-size: 92px;
+    font-family: 'Roboto', sans-serif;
+    color: #25468A;
+}
+
+.hero-info{
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #3B4A6B;
+    font-size: 32px;
+}
+
+.text{
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #3B4A6B;
+    width: 400px;
+    font-size: 15px;
+}
+
+.btn{
+    background: #F7BA0E;
+    padding: 15px 85px 15px 85px;
+    gap: 10px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    font-weight: 700;
+}
+
+div button:hover{
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+    color: #F7BA0E;
+    background: #25468A;
+
+}
+
+.hero-lift{
+    width: 50%;
+}
+
+.hero-right{
+    width: 50%;
+}
+
+.hero-right img{
+    width: 100%;
+}
+
+@media (max-width:800px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero-lift{
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+    .hero-title{
+        font-size: 50%;
+        text-align: center;
+    }
+    .hero-info{
+        font-size: 24%;
+    }
+    .hero-text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-lift{
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+    .hero-title{
+        width: 50px%;
+    }
+    .hero-info{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-text{
+        width: 55%;
+    }
+}
