@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -17,12 +19,12 @@
 
 header{
     height: 100vh;
-    background: #1391CEB2;
+    background: #FFF;
 }
 
 
 nav{
-    background: #1391CEB2;
+    background: #FFF;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -43,29 +45,26 @@ nav ul{
 }
 
 .link a{
-    color: #25468A;
+    color:black;
     font-size: 20px;
+    padding: 20px;
     
 }
 
 .link a:hover{
-    color: white;
+    color:#0082F4;
 }
 
 .btns{
+    color: white;
     padding: 15px 48px;
     border: none;
-    border-radius: 30px;
-    background: white;
+    border-radius: 5px;
+    background: #0082F4;
     font-weight: 700;
+    mar
 }
 
-nav button:hover{
-    color: white;
-    background: #25468A;
-    box-shadow: 1px 1px 10px black;
-    cursor: pointer;
-}
 
 .hero{
     padding-top: 160px;
@@ -73,18 +72,34 @@ nav button:hover{
     align-items: center;
 }
 
+.hero-one{
+    color: #0082F4;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
 .hero-title{
-    padding: 2px;
-    font-size: 92px;
+    font-size: 60.55px;
     font-family: 'Roboto', sans-serif;
     color: #25468A;
+    width: 540px;
+    margin-bottom: 20px;
+}
+
+.bold{
+    color: #0082F4;
+    display: inline-block;
 }
 
 .hero-info{
-    padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    color: #3B4A6B;
-    font-size: 32px;
+    color: rgb(96, 92, 92);
+    font-size: 16px;
+    font-weight: 400;
+    width: 436px;
+    height: 46px;
+    margin-bottom: 30px;
 }
 
 .text{
@@ -96,37 +111,43 @@ nav button:hover{
 }
 
 .btn{
-    background: #F7BA0E;
-    padding: 15px 85px 15px 85px;
-    gap: 10px;
-    border-radius: 30px;
-    border: none;
-    color: black;
-    font-weight: 700;
+width: 194px;
+height: 63px;
+border-radius: 10px;
+background: #0082F4;
+margin-right: 30px;
+color: white;
+font-size: 20px;
+border: none;
 }
 
-div button:hover{
-    cursor: pointer;
-    border: none;
-    box-shadow: 1px 1px 10px black;
-    color: #F7BA0E;
-    background: #25468A;
-
+.btn-play{
+width: 188px;
+height: 63px;
+border-radius: 10px;
+border: 1px solid #9fbcd3;
+background: white;
 }
+
 
 .hero-lift{
-    width: 50%;
+    width: 900%;
 }
 
 .hero-right{
-    width: 50%;
+    width: 500%;
+    height: 500%;
+    margin-bottom: 135px;
 }
 
 .hero-right img{
-    width: 100%;
+    width: 90%;
 }
 
 @media (max-width:800px){
+    .link{
+        display: none;
+    }
     .hero{
         flex-direction: column;
     }
@@ -167,4 +188,233 @@ div button:hover{
     .hero-text{
         width: 55%;
     }
+}
+
+.main-1{
+    display: flex;
+}
+
+.imgs-img{
+    display: flex;
+}
+
+.img-1{
+    width: 465.189px;
+    height: 486px;
+    margin-bottom: 165px;
+}
+
+.img-2{
+    width: 465.189px;
+    height: 486px;  
+}
+
+.padding-12{
+margin-left: 134px;
+}
+
+.home-right{
+    width: 267px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #0082F4;
+    margin-bottom: 5px;
+}
+
+.home-right-h{
+    width: 474px;
+    height: 122px;
+    font-size: 49px;
+    font-weight: 700;
+}
+
+.home-right-p{
+    margin-top: 20px;
+    color: rgb(96, 92, 92);
+    width: 482px;
+    font-size: 20px;
+    height: 90px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.home-right-btn{
+    width: 185px;
+    height: 63px;
+    border-radius: 10px;
+    background: #0082F4;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.cerd{
+    display: flex;
+    margin-bottom: 174px;
+    align-items: center;
+}
+
+
+section h2{
+    text-align: center;
+}
+
+
+.home-head{
+    font-size: 48.5px;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.cover-home{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.cover-one{
+    margin-right: 81px;
+}
+
+.imagess{
+    margin-bottom: 60px;
+}
+
+.cover-left{
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cover-left-text{
+    width: 324px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(96, 92, 92);
+
+}
+
+.cover-too{
+    margin-right: 81px;
+}
+
+.imagesss{
+    margin-bottom: 60px;
+}
+
+.cover-center{
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cover-center-text{
+    width: 324px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(96, 92, 92);
+
+}
+
+.cover-three{
+    margin-right: 81px;
+    text-align: center;
+}
+
+.imagessss{
+    margin-bottom: 60px;
+}
+
+.cover-right{
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cover-right-text{
+    width: 324px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(96, 92, 92);
+
+}
+
+.h2-text{
+    margin-bottom: 69px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.image-11{
+    background: white;
+    margin-right: 60px;
+    display: flex;
+    margin-right: 800px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-bottom: 200px;
+}
+
+.reding{
+    margin-left: 60px;
+}
+
+.reder{
+    margin-left: 60px;
+}
+
+
+.seri{
+    color: #058AFF;
+text-align: center;
+font-size: 31.25px;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.seri2{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;margin-bottom: 30px;
+    
+}
+
+.seri-button{
+    width: 102px;
+    height: 52px;
+    border-radius: 10px;
+    background: #0082F4;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    margin-left: 470px;
+    padding: 10px;
+}
+
+.e{
+    width: 487px;
+    align-items: center;
+}
+
+button h2{
+    background: #0082F4;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.yy{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see{
+    margin-top: 30px;
 }
